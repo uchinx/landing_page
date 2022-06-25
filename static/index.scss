@@ -41,7 +41,6 @@ $breakpoints: (
     .banner-img {
       position: relative;
       display: block;
-      left: -1px;
       width: 100%;
       height: auto;
 
@@ -213,6 +212,9 @@ $breakpoints: (
         padding: 78px 0;
         @include media("<tablet") {
           padding: 58px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .content {
@@ -253,6 +255,15 @@ $breakpoints: (
           @include media("<tablet") {
             flex-direction: column;
             margin-top: 10px;
+          }
+
+
+          @include media(">tablet", "<978px") {
+            margin-top: 20px;
+            .booking-btn {
+              padding: 12px !important;
+              margin: 12px auto !important;
+            }
           }
 
           .block {

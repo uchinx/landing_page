@@ -33,7 +33,6 @@
 .landingpage-content .banner .banner-img {
   position: relative;
   display: block;
-  left: -1px;
   width: 100%;
   height: auto;
 }
@@ -207,6 +206,9 @@
 @media (max-width: 769px) {
   .landingpage-content .booking .wrapper .wrapper-content {
     padding: 58px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .landingpage-content .booking .wrapper .wrapper-content .content {
@@ -247,6 +249,15 @@
   .landingpage-content .booking .wrapper .wrapper-content .event-blocks {
     flex-direction: column;
     margin-top: 10px;
+  }
+}
+@media (min-width: 771px) and (max-width: 977px) {
+  .landingpage-content .booking .wrapper .wrapper-content .event-blocks {
+    margin-top: 20px;
+  }
+  .landingpage-content .booking .wrapper .wrapper-content .event-blocks .booking-btn {
+    padding: 12px !important;
+    margin: 12px auto !important;
   }
 }
 .landingpage-content .booking .wrapper .wrapper-content .event-blocks .block {
